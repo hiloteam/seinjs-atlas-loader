@@ -1,0 +1,64 @@
+{
+  "name": "seinjs-atlas-loader",
+  "version": "0.8.7",
+  "description": "A loader to load atlas resources for Sein.js.",
+  "main": "lib/index.js",
+  "scripts": {
+    "dev": "export NODE_ENV=development && export SEINJS_LOADER_DEBUG=1 && npm run build && node ./demo/server.dev.js",
+    "demo-build": "export NODE_ENV=production && export SEINJS_LOADER_DEBUG=1 && npm run build && webpack --config ./demo/webpack.config.js",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "authors": [
+    {
+      "name": "dtysky",
+      "email": "dtysky@outlook.com"
+    }
+  ],
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "keywords": [
+    "Sein.js",
+    "Atlas",
+    "Loader"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "loader-utils": "^1.1.0",
+    "mime": "^2.4.3",
+    "tmp": "^0.0.33",
+    "urllib": "^2.29.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:SeinJS/seinjs-gltf-loader.git"
+  },
+  "devDependencies": {
+    "@types/loader-utils": "^1.1.3",
+    "@types/webpack": "^4.32.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "css-loader": "^0.28.8",
+    "express": "^4.16.2",
+    "file-loader": "^4.1.0",
+    "fs-extra": "^8.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mime": "^2.4.4",
+    "node-sass": "^4.7.2",
+    "raw-loader": "^3.1.0",
+    "react-hot-loader": "^3.1.3",
+    "sass-loader": "^6.0.6",
+    "seinjs": "^1.3.0",
+    "seinjs-audio": "^0.8.1",
+    "style-loader": "^0.19.1",
+    "tmp": "^0.0.33",
+    "tslint": "^4.1.1",
+    "tslint-microsoft-contrib": "^4.0.0",
+    "typescript": "3.2.2",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^2.10.1"
+  }
+}
