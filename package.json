@@ -1,6 +1,6 @@
 {
   "name": "seinjs-atlas-loader",
-  "version": "0.8.7",
+  "version": "0.8.8",
   "description": "A loader to load atlas resources for Sein.js.",
   "main": "lib/index.js",
   "scripts": {

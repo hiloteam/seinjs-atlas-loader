@@ -5,7 +5,6 @@
  * @Description:
  */
 import * as fs from 'fs';
-import * as fsExtra from 'fs-extra';
 import * as crypto from 'crypto';
 import * as path from 'path';
 import {loader} from 'webpack';
@@ -25,10 +24,6 @@ export async function emitFile(
 
   return await options.publish.publisher.publish(params);
 }
-
-export async function copyFiles(from: string, to: string) {
-  return fsExtra.copy(from, to);
-};
 
 export async function readFile(filePath: string): Promise<string> {
   return new Promise((resolve, reject) => {
